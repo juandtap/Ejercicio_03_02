@@ -14,10 +14,12 @@ public class Asignatura {
     private String codigo;
     private String nombre;
     private ArrayList<Grupo> listaGrupos;
+    private boolean cambioGrupo;
 
-    public Asignatura(String codigo, String nombre) {
+    public Asignatura(String codigo, String nombre, boolean cambioGrupo) {
         this.codigo = codigo;
         this.nombre = nombre;
+        this.cambioGrupo = cambioGrupo;
     }
 
     public String getNombre() {
@@ -42,6 +44,14 @@ public class Asignatura {
 
     public void setListaGrupos(ArrayList<Grupo> listaGrupos) {
         this.listaGrupos = listaGrupos;
+    }
+
+    public boolean isCambioGrupo() {
+        return cambioGrupo;
+    }
+
+    public void setCambioGrupo(boolean cambioGrupo) {
+        this.cambioGrupo = cambioGrupo;
     }
     
     
