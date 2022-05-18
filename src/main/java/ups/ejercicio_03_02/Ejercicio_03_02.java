@@ -12,6 +12,7 @@ package ups.ejercicio_03_02;
 public class Ejercicio_03_02 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        var v3 = new Ventana01(" INSCRIBETE");
+        v3.setVisible(true);
     }
 }
