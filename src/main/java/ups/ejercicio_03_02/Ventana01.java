@@ -36,7 +36,7 @@ public class Ventana01 extends JFrame {
     
     public Ventana01(String title) throws HeadlessException {
         super(title);
-        this.setSize(600,400);
+        this.setSize(500,300);
         this.setLocation(30, 30);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
         iniciarComponentes();
@@ -45,6 +45,7 @@ public class Ventana01 extends JFrame {
         this.jPanelPrincipal = new JPanel();
         this.setContentPane(jPanelPrincipal);
         this.jPanelPrincipal.setLayout(new GridLayout(4,2));
+        
         iniciarPaneles();
         iniciarEtiquetas();
         iniciarBotones();
@@ -62,6 +63,7 @@ public class Ventana01 extends JFrame {
         this.jPanelList.add(new JPanel());
         this.jPanelList.add(new JPanel());
         this.jPanelList.add(new JPanel());
+        this.jPanelList.add(new JPanel());
         
         this.jPanelPrincipal.add(this.jPanelList.get(0));
         this.jPanelPrincipal.add(this.jPanelList.get(1));
@@ -70,6 +72,16 @@ public class Ventana01 extends JFrame {
         this.jPanelPrincipal.add(this.jPanelList.get(4));
         this.jPanelPrincipal.add(this.jPanelList.get(5));
         this.jPanelPrincipal.add(this.jPanelList.get(6));
+        this.jPanelPrincipal.add(this.jPanelList.get(7));
+        
+        this.jPanelList.get(0).setBackground(Color.WHITE);
+        this.jPanelList.get(1).setBackground(Color.WHITE);
+        this.jPanelList.get(2).setBackground(Color.WHITE);
+        this.jPanelList.get(3).setBackground(Color.WHITE);
+        this.jPanelList.get(4).setBackground(Color.WHITE);
+        this.jPanelList.get(5).setBackground(Color.WHITE);
+        this.jPanelList.get(6).setBackground(Color.WHITE);
+        this.jPanelList.get(7).setBackground(Color.WHITE);
     }
     private void iniciarEtiquetas(){
         this.jLabelList = new ArrayList<>();
@@ -88,23 +100,23 @@ public class Ventana01 extends JFrame {
     
     private void iniciarText(){
         this.jTextField = new JTextField();
-        this.jTextField.setColumns(15);
+        this.jTextField.setColumns(20);
         this.jPanelList.get(5).add(jTextField);
     
     }
     
     private void iniciarComboBox(){
         this.jcomboBox1Sede = new JComboBox();
-        this.jcomboBox1Sede.addItem("Matriz Cuenca");
-        this.jcomboBox1Sede.addItem("Guayaquil");
-        this.jcomboBox1Sede.addItem("Quito");
+        this.jcomboBox1Sede.addItem(" Matriz Cuenca ");
+        this.jcomboBox1Sede.addItem(" Guayaquil ");
+        this.jcomboBox1Sede.addItem(" Quito ");
         this.jPanelList.get(1).add(this.jcomboBox1Sede);
         
         this.jcomboBox2Id = new JComboBox();
-        this.jcomboBox2Id.addItem("Cedula");
-        this.jcomboBox2Id.addItem("Pasaporte");
+        this.jcomboBox2Id.addItem(" Cedula ");
+        this.jcomboBox2Id.addItem(" Pasaporte ");
         this.jPanelList.get(3).add(this.jcomboBox2Id);
-    
+   
     }
     
     
