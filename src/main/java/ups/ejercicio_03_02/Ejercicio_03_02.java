@@ -17,5 +17,9 @@ public class Ejercicio_03_02 {
         
         var ventana04 = new Ventana04("CREAR GRUPO");
         ventana04.setVisible(true);
+        
+        
+        var ventana05 = new Ventana05("Ventana Informacion");
+        ventana05.setVisible(true);
     }
 }
