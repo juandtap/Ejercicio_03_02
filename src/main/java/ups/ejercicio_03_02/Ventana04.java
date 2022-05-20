@@ -18,6 +18,7 @@ import java.util.ArrayList;
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -51,6 +52,7 @@ public class Ventana04 extends JFrame{
     private JComboBox jcomboBoxAutorizacion;
     private JComboBox jcomboBoxJornada;
     private JComboBox jcomboBoxCambioGrupo;
+    private JCheckBox jcheckboxOferta;
 
     
   
@@ -79,6 +81,8 @@ public class Ventana04 extends JFrame{
         iniciarBotones();
         iniciarTextArea();
         iniciarTextField();
+        iniciarComboBoxs();
+        iniciarCheckBox();
         
     }
     
@@ -239,10 +243,26 @@ public class Ventana04 extends JFrame{
     }
     
     private void iniciarComboBoxs(){
-        jcomboBoxAutorizacion = new JComboBox();
-        jcomboBoxCambioGrupo = new JComboBox();
-        jcomboBoxJornada = new JComboBox();
+        this.jcomboBoxAutorizacion = new JComboBox();
+        this.jcomboBoxAutorizacion.addItem("NO");
+        this.jcomboBoxAutorizacion.addItem("SI");
+        this.jcomboBoxCambioGrupo = new JComboBox();
+        this.jcomboBoxCambioGrupo.addItem("SI");
+        this.jcomboBoxCambioGrupo.addItem("NO");
+        this.jcomboBoxJornada = new JComboBox();
+        this.jcomboBoxJornada.addItem("Jornadas Disponibles");
+        this.jcomboBoxJornada.addItem("Matutina");
+        this.jcomboBoxJornada.addItem("Vespertina");
         
+        this.jpanelList.get(19).add(this.jcomboBoxAutorizacion);
+        this.jpanelList.get(21).add(this.jcomboBoxJornada);
+        this.jpanelList.get(25).add(this.jcomboBoxCambioGrupo);
+        
+    }
+    
+    private void iniciarCheckBox(){
+        this.jcheckboxOferta = new JCheckBox("Nuevos");
+        this.jpanelList.get(23).add(this.jcheckboxOferta);
     }
     
 }
