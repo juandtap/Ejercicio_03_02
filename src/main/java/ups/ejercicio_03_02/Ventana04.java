@@ -8,6 +8,7 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.GridLayout;
@@ -59,11 +60,13 @@ public class Ventana04 extends JFrame{
     private void iniciarComponentes(){
         this.jpanelPrincipal = new JPanel();
         this.setContentPane(this.jpanelPrincipal);
-       
+        
+        
         
         
         iniciarPanelDatos();
         iniciarEtiquetas();
+        configurarFuente();
         iniciarBotones();
         iniciarTextArea();
         iniciarTextField();
@@ -76,7 +79,7 @@ public class Ventana04 extends JFrame{
         this.jpanelDatos.setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.GRAY));
         this.jpanelPrincipal.add(this.jpanelDatos);
         this.jpanelDatos.setLayout(new GridLayout(14,2));
-       
+        
        
         
         this.jpanelList = new ArrayList<>();
@@ -130,10 +133,19 @@ public class Ventana04 extends JFrame{
 
         for (int i = 0; i < this.jlabelList.size(); i++) {
             this.jpanelList.get(i).add(this.jlabelList.get(i));
+            
             if(i%2 != 0){
                this.jlabelList.get(i).setForeground(Color.GRAY);
             }
         }
+    }
+    
+    private void configurarFuente(){
+        
+        for (int i = 0; i < this.jlabelList.size(); i++) {
+             this.jlabelList.get(i).setFont(new Font("Calabri",Font.PLAIN,11));
+        }
+       
     }
     
     private void iniciarBotones(){
