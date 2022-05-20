@@ -90,17 +90,16 @@ private JPanel jPanelPrincipal;
         this.jLabelList.add(new JLabel("Fecha de Registro: "));
         this.jLabelList.add(new JLabel("20/05/2022"));
         
-        
-        this.jPanelList.get(0).add(this.jLabelList.get(0));
-        this.jPanelList.get(1).add(this.jLabelList.get(1));
-        this.jPanelList.get(2).add(this.jLabelList.get(2));
-        this.jPanelList.get(4).add(this.jLabelList.get(3));
-        this.jPanelList.get(6).add(this.jLabelList.get(4));
-        this.jPanelList.get(8).add(this.jLabelList.get(5));
-        this.jPanelList.get(10).add(this.jLabelList.get(6));
-        this.jPanelList.get(12).add(this.jLabelList.get(7));
-        this.jPanelList.get(13).add(this.jLabelList.get(8));
+        for (int i = 0; i <= 15; i++) {
+            for (int j = 0; j <= 8; j++){
+                this.jPanelList.get(i).add(this.jLabelList.get(j));
+            }
+        }
     }
+        
+         
+        
+        
     private void iniciarBotones(){
         this.jPanelList.get(15).add(new JButton("Siguiente"));
         
