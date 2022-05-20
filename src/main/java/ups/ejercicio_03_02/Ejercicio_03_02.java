@@ -14,5 +14,8 @@ public class Ejercicio_03_02 {
     public static void main(String[] args) {
         var v3 = new Ventana01(" INSCRIBETE");
         v3.setVisible(true);
+        
+        var ventana04 = new Ventana04("CREAR GRUPO");
+        ventana04.setVisible(true);
     }
 }
