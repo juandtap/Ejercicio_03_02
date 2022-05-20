@@ -14,7 +14,6 @@ import java.awt.HeadlessException;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JButton;
-import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -65,23 +64,13 @@ public class Ventana01 extends JFrame {
         this.jPanelList.add(new JPanel());
         this.jPanelList.add(new JPanel());
         
-        this.jPanelPrincipal.add(this.jPanelList.get(0));
-        this.jPanelPrincipal.add(this.jPanelList.get(1));
-        this.jPanelPrincipal.add(this.jPanelList.get(2));
-        this.jPanelPrincipal.add(this.jPanelList.get(3));
-        this.jPanelPrincipal.add(this.jPanelList.get(4));
-        this.jPanelPrincipal.add(this.jPanelList.get(5));
-        this.jPanelPrincipal.add(this.jPanelList.get(6));
-        this.jPanelPrincipal.add(this.jPanelList.get(7));
+         for (int i = 0; i <= 7; i++) {
+            jPanelPrincipal.add(this.jPanelList.get(i));
+        }
         
-        this.jPanelList.get(0).setBackground(Color.WHITE);
-        this.jPanelList.get(1).setBackground(Color.WHITE);
-        this.jPanelList.get(2).setBackground(Color.WHITE);
-        this.jPanelList.get(3).setBackground(Color.WHITE);
-        this.jPanelList.get(4).setBackground(Color.WHITE);
-        this.jPanelList.get(5).setBackground(Color.WHITE);
-        this.jPanelList.get(6).setBackground(Color.WHITE);
-        this.jPanelList.get(7).setBackground(Color.WHITE);
+         for (int i = 0; i <= 7; i++) {
+            jPanelList.get(i).setBackground(Color.WHITE);
+        }
     }
     private void iniciarEtiquetas(){
         this.jLabelList = new ArrayList<>();

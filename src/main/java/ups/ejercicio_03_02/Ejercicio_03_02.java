@@ -21,5 +21,13 @@ public class Ejercicio_03_02 {
         
         var ventana05 = new Ventana05("Ventana Informacion");
         ventana05.setVisible(true);
+        var v = new Ventana01(" INSCRIBETE");
+        v.setVisible(true);
+        
+        var v1 = new Ventana02("  INFORMACION DE CARRERA  ");
+        v1.setVisible(true);
+        
+        var v2 = new Ventana03("  DATOS PERSONALES  ");
+        v2.setVisible(true);
     }
 }
