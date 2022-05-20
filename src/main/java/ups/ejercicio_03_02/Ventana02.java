@@ -105,13 +105,8 @@ private JPanel jPanelPrincipal;
         this.jPanelList.get(15).add(new JButton("Siguiente"));
         
     }
-    
-    
-  
-    
     private void iniciarComboBox(){
         this.jcomboBoxCarrera = new JComboBox();
-        this.jcomboBoxCarrera.addItem(" Seleccione una opcion ");
         this.jcomboBoxCarrera.addItem(" Electronica y Automatizacion ");
         this.jcomboBoxCarrera.addItem(" Telecomunicaciones ");
         this.jcomboBoxCarrera.addItem(" Computacion ");
@@ -129,9 +124,11 @@ private JPanel jPanelPrincipal;
         this.jPanelList.get(7).add(this.jcomboBoxSede);
         
         this.jcomboBoxCampus = new JComboBox();
-        this.jcomboBoxCampus .addItem("  ");
-        this.jcomboBoxCampus.addItem(" Presencial ");
-        this.jcomboBoxCampus.addItem(" En linea ");
+        this.jcomboBoxCampus .addItem(" Campus El Vecino ");
+        this.jcomboBoxCampus.addItem(" Campus El Giron ");
+        this.jcomboBoxCampus.addItem(" Campus Sur ");
+        this.jcomboBoxCampus.addItem(" Campus Centenario ");
+        this.jcomboBoxCampus.addItem(" Campus Maria Auxiliadora ");
         this.jPanelList.get(9).add(this.jcomboBoxCampus);
         
         this.jcomboBoxJornada = new JComboBox();
